@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MyApplication"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".activity.PoliklinikActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.JadwalDokterActivity"
             android:exported="true" />
         <activity

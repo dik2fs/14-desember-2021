@@ -50,13 +50,22 @@
                 android:layout_weight="1"
                 android:gravity="right">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="17dp"/>
+
                 <ImageView
                     android:id="@+id/user"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:scaleType="fitXY"
-                    android:src="@drawable/users" />
+                    android:src="@drawable/users"
+                    android:clickable="true"/>
+
             </LinearLayout>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
