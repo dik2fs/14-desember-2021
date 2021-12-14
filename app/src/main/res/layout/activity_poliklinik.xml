@@ -9,26 +9,107 @@
 
 
     <LinearLayout
+        android:id="@+id/poli1"
         android:layout_width="145dp"
-        android:layout_height="135dp"
-        android:orientation="vertical"
+        android:layout_height="145dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="90dp"
         android:background="@drawable/bg_colom_putih"
         android:elevation="10dp"
-        android:padding="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/doctor"/>
+            android:src="@drawable/ic_poliklinikreguler" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Poliklinik Reguler"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="10dp"
+            android:text="Poliklinik Reguler" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/poli2"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:layout_toEndOf="@id/poli1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_poliklinikpelayanankankerterpadu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:text="Poliklinik Pelayanan\nKanker Terpadu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/poli3"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:layout_below="@id/poli1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_poliklinikjantung" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Poliklinik Jantung" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/poli4"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:layout_toEndOf="@id/poli3"
+        android:layout_below="@id/poli2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_rehabilitasmedik" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:text="Poliklinik\n Rehabilitas Medik" />
     </LinearLayout>
 
 
