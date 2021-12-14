@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test JKN Mobile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="www_rsudalihsan_jabarprov_go_id"><a href="https://rsudalihsan.jabarprov.go.id/">www.rsudalihsan.jabarprov.go.id/</a></string>
+    <string name="daftar"><u>Daftar</u></string>
+    <string name="login"><u>Login</u></string>
+</resources>

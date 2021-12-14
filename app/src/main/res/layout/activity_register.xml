@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.profiluser.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/tv_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"/>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_colom_putih"
+        android:padding="12dp"
+        android:paddingStart="21dp"
+        android:elevation="10dp"
+        android:layout_below="@id/tv_daftar"
+        android:layout_marginTop="34dp"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_username"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:hint="Email"
+        android:paddingStart="21dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/et_noTelepon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:hint="No. Telepon"
+        android:paddingStart="21dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_noTelepon"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:hint="Password"
+        android:padding="12dp"
+        android:paddingStart="21dp" />
+
+    <EditText
+        android:id="@+id/et_con_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:hint="Confirm Password"
+        android:paddingStart="21dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_con_password"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_btn_hijau"
+        android:elevation="10dp"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tv_sdhpnyaakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_daftar"
+        android:layout_marginStart="120dp"
+        android:text="Sudah Punya Akun?"
+        android:textSize="14sp"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/primary" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@id/tv_sdhpnyaakun"
+        android:layout_toRightOf="@id/tv_sdhpnyaakun"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/primary"
+        android:layout_marginTop="19dp"/>
+
+
+</RelativeLayout>

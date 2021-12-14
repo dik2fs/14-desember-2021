@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/primary">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="left|center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="right|center_vertical|center_horizontal"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/user"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/users" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="8dp">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:fillColor="#FFFFFFFF"
+            app:pageColor="#00000000"
+            app:radius="3dp"
+            app:slideInterval="3000"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        app:columnCount="3"
+        app:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/pelayanan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="Pelayanan"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/doctor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Jadwal Dokter"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/antrean" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Antrian"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/riwayat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Riwayat"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3"
+                >
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/rawat_inap" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Rawat Inap"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/informasikamar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Informasi Kamar"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/jadwal_operasi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Jadwal Operasi"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="15dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/hospital" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Pusat Bantuan"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

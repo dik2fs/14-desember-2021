@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.profiluser.PassworBaruActivity">
+
+    <ImageView
+        android:id="@+id/iv_passbaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_passwordbaru"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"/>
+
+    <TextView
+        android:id="@+id/tv_ket3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan masukkan password baru"
+        android:textSize="16sp"
+        android:textColor="@color/primary"
+        android:layout_below="@id/iv_passbaru"
+        android:layout_marginTop="53dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ket3"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:hint="Password"
+        android:padding="12dp"
+        android:paddingStart="21dp" />
+
+    <EditText
+        android:id="@+id/et_con_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:hint="Confirm Password"
+        android:paddingStart="21dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btn_lanjut3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_con_password"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_btn_hijau"
+        android:elevation="10dp"
+        android:text="lanjut"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="12dp" />
+
+
+
+</RelativeLayout>

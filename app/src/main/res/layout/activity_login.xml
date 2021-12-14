@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.profiluser.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="143dp"
+        android:layout_height="147dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username / Email"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_colom_putih"
+        android:padding="12dp"
+        android:paddingStart="21dp"
+        android:elevation="10dp"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginTop="19dp"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_username"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_colom_putih"
+        android:elevation="10dp"
+        android:hint="Password"
+        android:paddingStart="21dp"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tv_lupaPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password?"
+        android:layout_below="@id/et_password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/primary"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_lupaPassword"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/bg_btn_hijau"
+        android:elevation="10dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/tv_bpnyaakun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:text="Belum Punya Akun?"
+        android:layout_marginStart="120dp"
+        android:textSize="14sp"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/primary" />
+
+    <TextView
+        android:id="@+id/tv_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daftar"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@id/tv_bpnyaakun"
+        android:layout_toRightOf="@id/tv_bpnyaakun"
+        android:layout_marginStart="2dp"
+        android:textColor="@color/primary"
+        android:layout_marginTop="19dp"/>
+
+</RelativeLayout>
